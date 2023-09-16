@@ -63,11 +63,28 @@ graphql folder (https://youtu.be/986hztrfaSQ?si=ZK9LzyCs2cZja9cQ&t=4651)
 
 # DEPLOYMENT https://youtu.be/986hztrfaSQ?si=WpZiCdtyYitB9-31
 
-    NEXT_PUBLIC_SERVER_URL
-    NEXT_PUBLIC_GRAFBASE_API_URL, NEXT_PUBLIC_GRAFBASE_API_KEY
-    GOOGLE_CLIENT_ID,GOOGLE_CLIENT_SECRET
-    NEXTAUTH_SECRET (This should ne set in vercel and graphbase env), NEXTAUTH_URL
-    CLOUDINARY_NAME, CLOUDINARY_KEY, CLOUDINARY_SECRET
+        NEXT_PUBLIC_SERVER_URL=http://localhost:3000
+
+        # https://grafbase.com/farookquisar/nextjs-jsm-practice1-sep2023-jsm -> project -> Connect
+
+        NEXT_PUBLIC_GRAFBASE_API_URL=https://nextjs-jsm-practice1-sep2023-jsm-main-farookquisar.grafbase.app/graphql
+        NEXT_PUBLIC_GRAFBASE_API_KEY=
+
+        # https://console.cloud.google.com/apis/credentials/oauthclient/979980260566-1c1mtoerghkf3ebip791eudbgrcvt9mu.apps.googleusercontent.com?project=next-react-generic-project
+
+        GOOGLE_CLIENT_ID=
+        GOOGLE_CLIENT_SECRET=
+
+        # execute the command: openssl rand -base64 32 to get the secret (or search openssl online or https://www.cryptool.org/en/cto/openssl)
+
+        NEXTAUTH_SECRET=
+        NEXTAUTH_URL=http://localhost:3000
+
+        # https://console.cloudinary.com -> Dashboard
+
+        CLOUDINARY_NAME=
+        CLOUDINARY_KEY=
+        CLOUDINARY_SECRET=
 
 # ==================================================================================================================================
 
